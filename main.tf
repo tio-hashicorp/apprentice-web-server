@@ -49,6 +49,10 @@ resource "null_resource" "configure-app" {
   }
 }
 
+resource "random_id" "app-server-id" {
+  prefix      = "apprentice"
+  byte_length = 8
+}
 
 resource "tls_private_key" "apprentice" {
   algorithm = "RSA"
