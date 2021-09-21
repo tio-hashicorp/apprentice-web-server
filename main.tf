@@ -7,7 +7,8 @@ resource "aws_instance" "linux-node" {
   private_ip             = "172.31.54.130"
   instance_type          = var.aws_instance_type
   ami                    = var.aws_ami_id
-  key_name               = var.aws_key_pair_name
+  key_name               = aws_key_pair.apprentice.key_name
+  #key_name              = var.aws_key_pair_name
   subnet_id              = aws_subnet.apprentice_subnet_a.id
   vpc_security_group_ids = [aws_security_group.apprentice.id]
   ebs_optimized          = true
