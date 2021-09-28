@@ -18,4 +18,6 @@ variable "ami_owner"    { default = "309956199498" } # Base RHEL owner
 // Nodes
 
 variable "aws_instance_type" { default = "t3.micro" }
+variable "v_ipaddress" { }
+variable "v_hostname" {  }
 
