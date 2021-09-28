@@ -19,14 +19,3 @@ variable "ami_owner"    { default = "309956199498" } # Base RHEL owner
 
 variable "aws_instance_type" { default = "t3.micro" }
 
-
-////////////////////////////////
-// Object Tags
-
-variable "tag_customer" { default = "apjcorp" }
-variable "tag_project" { default = "demo" }
-variable "tag_name" { default = "" }
-variable "tag_dept" { default = "default" }
-variable "tag_contact" { default = "tbagio@gmail.com" }
-variable "tag_application" { default = "default" }
-variable "tag_ttl" { default = 4 }

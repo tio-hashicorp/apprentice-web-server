@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "linux-node" {
-  private_ip             = "172.31.54.130"
+  private_ip             = var.v_ipaddress     #"172.31.54.130"
   instance_type          = var.aws_instance_type
   ami                    = var.aws_ami_id
   key_name               = aws_key_pair.apprentice.key_name
